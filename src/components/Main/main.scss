@@ -1,0 +1,34 @@
+.main {
+  background-color: #0f172af2;
+  width: 100%;
+  .bglines {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    span {
+      border: 0 solid #fff;
+      border-right-width: 1px;
+      border-color: rgb(255 255 255/0.05);
+    }
+  }
+  .section-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+}
+.name-title {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  .text-primary {
+    color: #72e2ae;
+  }
+}

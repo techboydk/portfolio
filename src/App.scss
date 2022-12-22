@@ -1,0 +1,75 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  font-family: Radio Canada,sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: rgb(191 190 203/1);
+}
+
+.active{
+  display: flex !important;
+}
+.fixed{
+  position: fixed !important;
+}
+.btn{
+  width: fit-content;
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  background-color: #72e2ae;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
+  position: relative;
+  *{
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    transform-origin: bottom;
+    transform: translateX(0) translateY(0) scaleX(1) scaleY(0) rotate(0)
+      skew(0);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.5s;
+    z-index: 0;
+  }
+  &:hover {
+    position: relative;
+    &::after {
+      transform-origin: top;
+      transform: translateX(0) translateY(0) scaleX(1) scaleY(1) rotate(0)
+        skew(0);
+        color: #0b1223;
+    }
+  }
+}
+
+@media screen and (max-width:468px) {
+  .btn,.item{
+    cursor: auto !important;
+  }
+}

@@ -1,0 +1,54 @@
+.section-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    gap: 1rem;
+    padding-bottom: 4.5rem;
+    .heading{
+        text-align: center;
+        font-size: 36px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .dot-container{
+        position: relative;
+        display: flex;
+        width: 8rem;
+        background: #72e2ae33;
+        height: 0.375rem;
+        border-radius: 9999px;
+        overflow: hidden;
+        .dot{
+            position: absolute;
+            width: 0.375rem;
+            height: 0.375rem;
+            background: #72e2ae;
+            border-radius: 50%;
+            animation: moving 3s ease-in-out infinite;
+        }
+    }
+    .bg-text{
+        position: absolute;
+        font-size: 8rem;
+        top: -0.5rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        opacity: 0.05;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+}
+
+@keyframes moving {
+    0%{
+        left: -5%;
+    }
+    100%{
+        left: 105%;
+    }
+}
