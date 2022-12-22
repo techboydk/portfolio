@@ -2,6 +2,7 @@ import React from 'react'
 import About from './About/About'
 import Home from './Home/Home'
 import './main.scss'
+import Skill from './Skill/Skill'
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
         <div className="section-container">
           <Home/>
           <About/>
+          <Skill/>
         </div>
     </div>
   )
