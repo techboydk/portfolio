@@ -13,7 +13,7 @@ const Skill = () => {
                 {
                     Skills.map((item)=>{
                         return(
-                            <Card skill={item} />
+                            <Card skill={item} key={item.skillName} />
                         )
                     })
                 }

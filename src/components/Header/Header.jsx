@@ -10,9 +10,6 @@ const Header = () => {
       const onScroll = ()=>{
         if(animate<=window.scrollY){
             header.current.classList.add("fixed");
-
-            console.log(animate)
-            console.log(window.scrollY)
         }else{
             header.current.classList.remove("fixed");
         }

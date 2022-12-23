@@ -1,13 +1,12 @@
 .resume-section {
     .row {
         display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 0 2rem;
         gap: 1.75rem;
-
+        justify-content: center;
         .column {
-            .education-timeline {
+            max-width: 80%;
+            .education-timeline,.work-timeline {
                 display: flex;
                 flex-direction: column;
                 gap: 0.75rem;
@@ -18,24 +17,110 @@
                     line-height: 1.4;
                     display: flex;
                     gap: .5rem;
+                    z-index: 10;
                 }
                 .timeline{
                     display: flex;
                     position: relative;
-                    justify-content: center;
                     .timeline-year{
                         font-size: 14px;
                         display: flex;
                         padding: 0.25rem;
-                        background: #72e3ae1a;
+                        background: rgba(114, 227, 174, 0.1019607843);
                         border-radius: 9999px;
-                        width: 326px;
-                        height: fit-content;
+                        min-width: 115px;
                         justify-content: center;
                         align-items: center;
+                        margin: 1.5rem 3rem 0 0;
+                        height: fit-content;
+                    }
+                    .timeline-right{
+                        position: relative;
+                        padding: 1.5rem 0 0 3rem;
+                        border-left: 4px solid rgb(255 255 255/0.2);
+                        text-transform: capitalize;
+                        .bg-white {
+                            position: absolute;
+                            background: rgb(255 255 255/0.2);
+                            width: 0;
+                            height: 100%;
+                            top: 0;
+                            left: -0.125rem;
+                            margin-top: 0.25rem;
+                            .circle {
+                                position: absolute;
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                background: #0f172af2;
+                                top: 1.5rem;
+                                border: 4px solid rgb(255 255 255/0.2);
+                                border-radius: 50%;
+                                left: 0;
+                                transform: translateX(-50%);
+                                z-index: 10;
+                            }
+                            .hz-line {
+                                position: absolute;
+                                width: 5rem;
+                                height: 0.25rem;
+                                background: rgb(255 255 255/0.2);
+                                top: 1.5rem;
+                                border-radius: 9999px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                margin-top: 0.626rem;
+                                z-index: 0;
+                            }
+                        }
+                        .text-primary {
+                            font-size: 18px;
+                            line-height: 1.5;
+                            font-weight: 600;
+                            color: #72e2ae;
+                        }
+                        .text-sec,.text-ter {
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 1.6;
+                            color: rgb(250 250 250/1);
+                        }
+                        .text-ter {
+                            color: rgb(191 190 203/1);
+                        }
                     }
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .resume-section{
+        .row{
+            flex-direction: column;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .resume-section{
+        .column{
+            max-width: 100% !important;
+        }
+        .timeline-year{
+            position: absolute !important;
+            left: 3rem !important;
+            top: 0 !important;
+        }
+        .timeline-right{
+            padding: 4.25rem 0 0 4rem !important;
+            .bg-white {
+                .hz-line {
+                    width: 2rem !important;
+                    right: 100% !important;
+                    transform: none !important;
+                }
+            }
+        }
+
     }
 }

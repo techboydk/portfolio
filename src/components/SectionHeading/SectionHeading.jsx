@@ -6,7 +6,7 @@ const SectionHeading = (props) => {
         <div className="section-heading">
             <div className="heading">{props.heading}</div>
             <span className='dot-container'>
-                <sapn className="dot"></sapn>
+                <span className="dot"></span>
             </span>
             <span className='bg-text'>{props.bgText}</span>
         </div>
