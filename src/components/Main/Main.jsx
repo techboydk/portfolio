@@ -2,6 +2,7 @@ import React from 'react'
 import About from './About/About'
 import Home from './Home/Home'
 import './main.scss'
+import Resume from './Resume/Resume'
 import Skill from './Skill/Skill'
 
 const Main = () => {
@@ -14,6 +15,7 @@ const Main = () => {
           <Home/>
           <About/>
           <Skill/>
+          <Resume/>
         </div>
     </div>
   )
