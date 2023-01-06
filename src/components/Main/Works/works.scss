@@ -1,0 +1,28 @@
+.works-section{
+    .tags{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        .header-btn{
+            padding: 0.375rem 1rem;
+            font-weight: 600;
+            background: #72e2ae1a;
+            color: #72e2ae;
+            &.active-tag{
+                background-color: #72e2ae;
+                color: #0f172a;
+            }
+            &:hover{
+                color: #0f172a;
+            }
+        }
+    }
+    .card-container{
+        display: flex;
+        margin-top: 3rem;
+        gap: 1rem;
+        padding: 0 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
