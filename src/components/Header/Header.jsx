@@ -27,6 +27,14 @@ const Header = () => {
         !show ? setToShow(!show) : setToShow(!show);
     }
 
+    const handleClick = (e) => {
+        console.log(e.target.parentElement);
+        if (e.target.parentElement?.classList?.contains('menu-items') || e.target?.classList?.contains('item')) {
+            e.target.parentElement.querySelector('.active')?.classList?.contains('active') && e.target.parentElement.querySelector('.active')?.classList?.remove('active');
+            e.target.parentElement.classList?.contains('menu-items') && e.target.classList?.add('active')
+        }
+    }
+
     return (
         <div className="header" ref={header}>
             <div className="logo">
@@ -40,27 +48,27 @@ const Header = () => {
                     <div className="close-btn btn" onClick={handleDisplay}>
                         <span></span><span></span>
                     </div>
-                    <div className="menu-items">
-                        <HashLink smooth to='#home' onClick={handleDisplay} className="item">Home</HashLink>
+                    <div className="menu-items" onClick={handleClick}>
+                        <HashLink smooth to='#home' onClick={handleDisplay} className="item active">Home</HashLink>
                         <HashLink smooth to='#mywork' onClick={handleDisplay} className="item">My Work</HashLink>
                         <HashLink smooth to='#contact' onClick={handleDisplay} className="item">contact</HashLink>
                         <HashLink smooth to='#resume' onClick={handleDisplay} className="item">resume</HashLink>
                         <HashLink smooth to='#myskill' onClick={handleDisplay} className="item">My Skill</HashLink>
-                        <HashLink smooth to='#about' className="item">About</HashLink>
+                        <HashLink smooth to='#about' onClick={handleDisplay} className="item">About</HashLink>
                     </div>
                     <HashLink smooth to="#contact" onClick={handleDisplay} className="header-btn btn"><span>Hire Me</span></HashLink>
 
                 </div>
             </div>
-            <div className="menu-items">
-                <HashLink smooth to='#home' className="item">Home</HashLink>
+            <div className="menu-items" onClick={handleClick}>
+                <HashLink smooth to='#home' className="item active">Home</HashLink>
                 <HashLink smooth to='#mywork' className="item">My Work</HashLink>
                 <HashLink smooth to='#contact' className="item">contact</HashLink>
                 <HashLink smooth to='#resume' className="item">resume</HashLink>
                 <HashLink smooth to='#myskill' className="item">My Skill</HashLink>
                 <HashLink smooth to='#about' className="item">About</HashLink>
             </div>
-            <HashLink smooth to="#contact"className="header-btn btn"><span>Hire Me</span></HashLink>
+            <HashLink smooth to="#contact" className="header-btn btn"><span>Hire Me</span></HashLink>
         </div>
     )
 }
