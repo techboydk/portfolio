@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.59e9383b.css",
-    "main.js": "/portfolio/static/js/main.6ac50643.js",
+    "main.js": "/portfolio/static/js/main.fd72f5f0.js",
     "static/media/upskool-desktop.svg": "/portfolio/static/media/upskool-desktop.38a853836c6b1043963e.svg",
     "static/media/upskool-mobile.svg": "/portfolio/static/media/upskool-mobile.894a02080b5b1605fd2f.svg",
     "static/media/upskool-slider.svg": "/portfolio/static/media/upskool-slider.b341aa6c946c2fb285ec.svg",
@@ -10,10 +10,10 @@
     "static/media/profile.jpeg": "/portfolio/static/media/profile.ed4e465345d73d9cd89f.jpeg",
     "index.html": "/portfolio/index.html",
     "main.59e9383b.css.map": "/portfolio/static/css/main.59e9383b.css.map",
-    "main.6ac50643.js.map": "/portfolio/static/js/main.6ac50643.js.map"
+    "main.fd72f5f0.js.map": "/portfolio/static/js/main.fd72f5f0.js.map"
   },
   "entrypoints": [
     "static/css/main.59e9383b.css",
-    "static/js/main.6ac50643.js"
+    "static/js/main.fd72f5f0.js"
   ]
 }
