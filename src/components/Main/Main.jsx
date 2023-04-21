@@ -5,6 +5,7 @@ import './main.scss'
 import Resume from './Resume/Resume'
 import Skill from './Skill/Skill'
 import Works from './Works/Works'
+import Contact from './Contact/Contact'
 
 const Main = () => {
   return (
@@ -18,6 +19,7 @@ const Main = () => {
           <Skill/>
           <Resume/>
           <Works/>
+          <Contact/>
         </div>
     </div>
   )

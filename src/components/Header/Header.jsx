@@ -29,7 +29,7 @@ const Header = () => {
     return (
         <div className="header" ref={header}>
             <div className="logo">
-                Techboydk
+                Dipesh Yadav
             </div>
             <div className="mobile-menu">
                 <div className="menu-btn btn" onClick={handleDisplay}>

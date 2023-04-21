@@ -39,4 +39,20 @@ export const workData = [
         previewUrl:'https://techboydk.github.io/google-chrome',
         gitUrl:''
     },
+    {
+        category:'react',
+        image:'',
+        title:'Musify',
+        desc:'This is a music app.',
+        previewUrl:'https://techboydk.github.io/musify/',
+        gitUrl:'https://github.com/techboydk/musify'
+    },
+    {
+        category:'react',
+        image:'',
+        title:'Spotify Clone',
+        desc:'This is a spotify clone app.',
+        previewUrl:'https://techboydk.github.io/spotify-clone/',
+        gitUrl:'https://github.com/techboydk/spotify-clone'
+    },
 ]
