@@ -6,7 +6,7 @@ import { Skills } from './skills'
 
 const Skill = () => {
   return (
-    <div className="skill-section">
+    <div className="skill-section" id='myskill'>
         <SectionHeading heading="my skills" bgText="skills"/>
         <div className="skill-wrapper">
             <div className="cards">

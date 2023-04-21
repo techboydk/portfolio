@@ -4,7 +4,7 @@ import profile from '../../../assets/images/profile.jpeg'
 
 const Home = () => {
   return (
-    <div className="home-section">
+    <div className="home-section" id='home'>
         <div className="bg"></div>
         <div className="content">
             <div className="img-wrapper">

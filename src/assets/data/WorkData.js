@@ -40,7 +40,7 @@ export const workData = [
         gitUrl:''
     },
     {
-        category:'react',
+        category:'reactjs',
         image:'',
         title:'Musify',
         desc:'This is a music app.',
@@ -48,7 +48,7 @@ export const workData = [
         gitUrl:'https://github.com/techboydk/musify'
     },
     {
-        category:'react',
+        category:'reactjs',
         image:'',
         title:'Spotify Clone',
         desc:'This is a spotify clone app.',

@@ -18,7 +18,7 @@ const Contact = () => {
         });
     };
     return (
-        <div className="contact_section">
+        <div className="contact_section" id='contact'>
             <SectionHeading heading="contact us" bgText="contact" />
             <div className="form_box">
                 <form ref={form} onSubmit={sendEmail}>
