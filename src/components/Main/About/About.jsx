@@ -5,7 +5,7 @@ import aboutImage from '../../../assets/images/about-image.jpg'
 
 const About = () => {
     return (
-        <div className="about-section">
+        <div className="about-section" id='about'>
             <SectionHeading heading ="About me" bgText="about" />
             <div className="row">
                 <div className="column left">
@@ -31,7 +31,7 @@ const About = () => {
                         <div className="list-item"><strong>Languages</strong>: English, Hindi</div>
                         <div className="list-item"><strong>Freelance</strong>: Available</div>
                     </div>
-                    <div className="header-btn btn"><span>Download CV</span></div>
+                    <a href='https://drive.google.com/file/d/1CVS7MRfAcfCyzsAhNdzQjLVSNCg49bzZ/view?usp=sharing' target='_blank' rel="noreferrer"  className="header-btn btn"><span>Download CV</span></a>
                 </div>
             </div>
         </div>
