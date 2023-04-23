@@ -11,6 +11,7 @@
   padding: 1.25rem;
   flex: 1;
   z-index: 1;
+  animation: loading 1s ease-out;
   &:hover{
     transition: .2s transform ease ;
     transform: translateY(-5px);
@@ -150,5 +151,14 @@
   }
   100%{
     font-size: 2rem;
+  }
+}
+
+@keyframes loading {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }

@@ -24,6 +24,29 @@
     width: 100%;
     padding-bottom: 2rem;
   }
+  .scroll_top{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1.5rem;
+    bottom: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #72e2ae;
+    border-radius: 50%;
+    z-index: 999;
+    transform: translateX(5rem);
+    transition: .5s transform ease;
+    cursor: pointer;
+    &.active{
+      transform: translateX(0);
+    }
+    i{
+      font-size: 1rem;
+      color: #000;
+    }
+  }
 }
 .name-title {
   display: flex;

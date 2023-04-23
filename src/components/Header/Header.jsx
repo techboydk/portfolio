@@ -50,10 +50,10 @@ const Header = () => {
                     </div>
                     <div className="menu-items" onClick={handleClick}>
                         <HashLink smooth to='#home' onClick={handleDisplay} className="item active">Home</HashLink>
-                        <HashLink smooth to='#mywork' onClick={handleDisplay} className="item">My Work</HashLink>
+                        <HashLink smooth to='#works' onClick={handleDisplay} className="item">My Work</HashLink>
                         <HashLink smooth to='#contact' onClick={handleDisplay} className="item">contact</HashLink>
                         <HashLink smooth to='#resume' onClick={handleDisplay} className="item">resume</HashLink>
-                        <HashLink smooth to='#myskill' onClick={handleDisplay} className="item">My Skill</HashLink>
+                        <HashLink smooth to='#skills' onClick={handleDisplay} className="item">My Skill</HashLink>
                         <HashLink smooth to='#about' onClick={handleDisplay} className="item">About</HashLink>
                     </div>
                     <HashLink smooth to="#contact" onClick={handleDisplay} className="header-btn btn"><span>Hire Me</span></HashLink>
@@ -62,10 +62,10 @@ const Header = () => {
             </div>
             <div className="menu-items" onClick={handleClick}>
                 <HashLink smooth to='#home' className="item active">Home</HashLink>
-                <HashLink smooth to='#mywork' className="item">My Work</HashLink>
+                <HashLink smooth to='#works' className="item">My Work</HashLink>
                 <HashLink smooth to='#contact' className="item">contact</HashLink>
                 <HashLink smooth to='#resume' className="item">resume</HashLink>
-                <HashLink smooth to='#myskill' className="item">My Skill</HashLink>
+                <HashLink smooth to='#skills' className="item">My Skill</HashLink>
                 <HashLink smooth to='#about' className="item">About</HashLink>
             </div>
             <HashLink smooth to="#contact" className="header-btn btn"><span>Hire Me</span></HashLink>

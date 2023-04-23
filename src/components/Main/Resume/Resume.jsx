@@ -8,7 +8,7 @@ const Resume = () => {
     const keys = Object.keys(ResumeData);
     return (
         <div className="resume-section" id='resume'>
-            <SectionHeading heading="my resume" bgText="Resume" />
+            <SectionHeading heading="my resume" bgText="resume" />
             <div className="row">
                 {
                     keys.map((key, index) => {

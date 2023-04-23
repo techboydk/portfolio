@@ -23,7 +23,7 @@ const Works = () => {
   }
 
   return (
-    <div className="works-section" id='mywork'>
+    <div className="works-section" id='works'>
       <SectionHeading heading="My works" bgText="works" key="mywork"/>
       <div className="tags">
         <div className="header-btn btn active-tag" onClick={handleClick}><span>All</span></div>
