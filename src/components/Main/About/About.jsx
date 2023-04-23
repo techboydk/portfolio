@@ -1,7 +1,6 @@
 import React from 'react'
 import SectionHeading from '../../SectionHeading/SectionHeading'
 import './about.scss'
-import aboutImage from '../../../assets/images/about-image.jpg'
 
 const About = () => {
     return (
@@ -12,7 +11,7 @@ const About = () => {
                     <div className="img-container">
                         <span></span><span></span><span></span><span></span>
                         <div className="img">
-                            <img src={aboutImage} alt="" />
+                            <img src={"https://i.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.webp"} alt="" />
                         </div>
                     </div>
                 </div>

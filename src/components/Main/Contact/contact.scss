@@ -10,15 +10,11 @@
         border: 1px solid rgba(255, 255, 255, 0.1019607843);
         background-color: #162033;
 
-        div {
+        label {
             display: flex;
             flex-direction: column;
             margin-bottom: 1rem;
-            label {
-                margin-bottom: .25rem;
-                text-transform: capitalize;
-                font-weight: 500;
-            }
+            text-transform: capitalize;
             textarea{
                 all: unset;
                 outline: none;
@@ -40,6 +36,8 @@
         }
 
         .btn{
+           outline: none;
+           border: none;
             span{
                 font-weight: 600;
             }

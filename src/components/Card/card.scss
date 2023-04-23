@@ -11,10 +11,31 @@
   padding: 1.25rem;
   flex: 1;
   z-index: 1;
-  .skill-logo {
-    font-size: 5rem;
-    color: #72e2ae;
+  &:hover{
+    transition: .2s transform ease ;
+    transform: translateY(-5px);
+    .skill-logo{
+      i{
+        animation: anim .15s ease-in-out;
+      }
+    }
   }
+  .skill-logo {
+    background: #72e2ae21;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 0.5rem;
+    i{
+      font-size: 2rem;
+      color: #72e2ae;
+    }
+  }
+
   .skill-name {
     font-size: 22px;
     font-weight: 600;
@@ -22,9 +43,11 @@
     text-transform: uppercase;
   }
 }
+
 .work-card {
   justify-content: flex-start;
   gap: 1rem;
+
   .image-hover {
     width: 100%;
     position: relative;
@@ -33,6 +56,7 @@
     align-items: flex-start;
     aspect-ratio: 3/2;
     overflow: hidden;
+
     .image {
       width: 100%;
       height: 100%;
@@ -41,7 +65,8 @@
       justify-content: center;
       align-items: center;
       font-size: 3rem;
-      span{
+
+      span {
         background: #72e2ae1a;
         color: #72e2ae;
         width: 10rem;
@@ -54,60 +79,76 @@
         min-height: 5rem;
         font-size: 5rem;
       }
+
       img {
         width: 100%;
         height: 100%;
         object-fit: fill;
       }
     }
+
     .hover-content {
-        position: absolute;
-        left: -100%;
-        width: 0%;
-        height: 100%;
+      position: absolute;
+      left: -100%;
+      width: 0%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(15 23 42/0.8);
+      transition: .5s ease;
+      transform-origin: left;
+      backdrop-filter: blur(5px);
+
+      .button {
+        background: #72e2ae;
+        color: #0f172a;
+        padding: 0.5rem;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(15 23 42/0.8);
-        transition: .5s ease;
-        transform-origin: left;
-        backdrop-filter: blur(5px);
-        .button{
-            background: #72e2ae;
-            color: #0f172a;
-            padding: 0.5rem;
-            border-radius: 50%;
-            width: 2.5rem;
-            height: 2.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      }
     }
 
   }
-  &:hover{
-    .hover-content{
-        left: 0;
-        width: 100%;
-        transition: .5s ease;
+
+  &:hover {
+    .hover-content {
+      left: 0;
+      width: 100%;
+      transition: .5s ease;
     }
   }
+
   .content {
     display: flex;
     flex-direction: column;
     width: 100%;
+
     .title {
       font-size: 18px;
       font-weight: 500;
       line-height: 1.5;
       color: rgb(250 250 250);
     }
+
     .desc {
-        font-size: 16px;
-        line-height: 1.6;
-        font-weight: 400;
-        color: rgb(191 190 203/1);
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+      color: rgb(191 190 203/1);
     }
+  }
+}
+
+@keyframes anim {
+  0%{
+    font-size: 4rem;
+  }
+  100%{
+    font-size: 2rem;
   }
 }

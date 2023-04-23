@@ -7,7 +7,7 @@
   max-width: fit-content;
   .row {
     display: flex;
-    gap: 1.75rem;
+    gap: 2.75rem;
     justify-content: center;
     width: 100%;
     .column {
@@ -24,6 +24,7 @@
         border: 10px solid #72e2ae33;
         display: flex;
         justify-content: center;
+        flex: 1;
         span {
           position: absolute;
           height: 0.625rem;
