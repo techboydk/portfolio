@@ -2,6 +2,8 @@ import React from 'react';
 import './footer.scss'
 
 const Footer = () => {
+    const date = new Date()
+    const year = date.getFullYear()
     return (
         <div className='footer'>
             <div className="icons">
@@ -16,7 +18,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <div className="text">© 2023, All right reserved <strong>Dipesh Yadav</strong></div>
+            <div className="text">© <span>{year}</span>, All right reserved <strong>Dipesh Yadav</strong></div>
         </div>
     )
 }

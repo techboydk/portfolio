@@ -9,7 +9,7 @@
   padding: 0 2rem;
   align-items: center;
   z-index: 200;
-  &.fixed{
+  &.fixed {
     backdrop-filter: blur(8px);
     background: #0f172acc;
     border-bottom: 1px solid #ffffff34;
@@ -25,8 +25,8 @@
   .mobile-menu {
     display: none;
     .menu-btn {
-      &:hover{
-        span{
+      &:hover {
+        span {
           background: #0b1223;
         }
       }
@@ -47,7 +47,7 @@
       }
     }
     .menu-container {
-      display: none;
+      display: flex;
       gap: 1rem;
       flex-direction: column;
       position: absolute;
@@ -58,14 +58,19 @@
       justify-content: center;
       align-items: center;
       background: #0b1223;
-      z-index: 20;
+      z-index: 99;
+      transform: translateY(100%);
+      transition: .5s ease;
+      &.active{
+        transform: translateY(0);
+      }
       .close-btn {
-        &:hover{
-          span{
+        &:hover {
+          span {
             background: #0b1223;
           }
         }
-        position: absolute;              
+        position: absolute;
         top: 2rem;
         right: 2rem;
         width: 3rem;
@@ -83,11 +88,11 @@
           background: #72e2ae;
           border-radius: 10px;
           position: absolute;
-          &:nth-child(1){
+          &:nth-child(1) {
             transform-origin: center;
             transform: rotate(45deg) translate(0px, -1px);
           }
-          &:nth-child(2){
+          &:nth-child(2) {
             transform-origin: center;
             transform: rotate(-45deg);
           }
@@ -98,11 +103,11 @@
         flex-direction: column;
         gap: 0;
         text-align: center;
-        .item{
+        .item {
           padding: 1rem 0;
           text-decoration: none !important;
           justify-content: center;
-          &::after{
+          &::after {
             bottom: 10px;
           }
         }
@@ -133,7 +138,8 @@
         bottom: 20px;
         transition: 0.5s ease;
       }
-      &:hover, &.active {
+      &:hover,
+      &.active {
         color: #72e2ae;
         &::after {
           width: 110%;
@@ -163,19 +169,16 @@
     position: relative;
     z-index: 20;
     text-decoration: none;
-
   }
 }
 @keyframes slideDown {
-  0%{
+  0% {
     transform: translateY(-100%);
   }
-  100%{
+  100% {
     transform: translateY(0);
   }
-  
 }
-
 
 @media screen and (max-width: 1024px) {
   .header {
@@ -190,7 +193,6 @@
       .header-btn {
         display: flex;
       }
-
     }
   }
 }

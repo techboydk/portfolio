@@ -28,7 +28,6 @@ const Header = () => {
     }
 
     const handleClick = (e) => {
-        console.log(e.target.parentElement);
         if (e.target.parentElement?.classList?.contains('menu-items') || e.target?.classList?.contains('item')) {
             e.target.parentElement.querySelector('.active')?.classList?.contains('active') && e.target.parentElement.querySelector('.active')?.classList?.remove('active');
             e.target.parentElement.classList?.contains('menu-items') && e.target.classList?.add('active')
