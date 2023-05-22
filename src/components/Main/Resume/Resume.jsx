@@ -21,7 +21,7 @@ const Resume = () => {
                                             {
                                                 ResumeData.education.map((item) => {
                                                     return (
-                                                        <Timeline title={item.title} instituteName={item.instituteName} year={item.year} desc={item.desc} key={item.title} />
+                                                        <Timeline title={item?.title} instituteName={item?.instituteName} year={item?.year} desc={item?.desc} marks={item?.marks} key={item.title} />
                                                     )
                                                 })
                                             }
@@ -38,7 +38,7 @@ const Resume = () => {
                                             {
                                                 ResumeData.work.map((item, index) => {
                                                     return (
-                                                        <Timeline title={item.title} instituteName={item.instituteName} year={item.year} desc={item.desc} key={index} />
+                                                        <Timeline title={item?.title} instituteName={item?.instituteName} year={item?.year} desc={item?.desc} key={index} link={item?.link} />
                                                     )
                                                 })
                                             }
