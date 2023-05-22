@@ -27,7 +27,7 @@ export const ResumeData ={
             {
                 title: "Front-end developer (React)",
                 instituteName: "idyll - dating app",
-                year: "1 month",
+                year: "2 month",
                 desc: "it is a dating app start-up.",
                 link:"https://www.getidyll.in/"
             },

@@ -30,7 +30,7 @@ const About = () => {
                         <div className="list-item"><strong>Languages</strong>: English, Hindi</div>
                         <div className="list-item"><strong>Freelance</strong>: Available</div>
                     </div>
-                    <a href='https://drive.google.com/file/d/1CVS7MRfAcfCyzsAhNdzQjLVSNCg49bzZ/view?usp=sharing' target='_blank' rel="noreferrer"  className="header-btn btn"><span>Download CV</span></a>
+                    <a href='https://drive.google.com/file/d/1al4jBpfGWjNWBtwfRE6naqUpYJqQi7j7/view?usp=sharing' target='_blank' rel="noreferrer"  className="header-btn btn"><span>Download CV</span></a>
                 </div>
             </div>
         </div>
