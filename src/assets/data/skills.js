@@ -21,11 +21,15 @@ export const Skills = [
     },
     {
         icon: "fa-brands fa-react",
-        skillName: "react"
+        skillName: "react js"
     },
     {
         icon: "fa-brands fa-node",
-        skillName: "nodejs"
+        skillName: "node js"
+    },
+    {
+        icon: "fa-solid fa-database",
+        skillName: "mongodb"
     },
 
 ]

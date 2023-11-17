@@ -12,12 +12,12 @@
   flex: 1;
   z-index: 1;
   animation: loading 1s ease-out;
-  &:hover{
-    transition: .2s transform ease ;
+  &:hover {
+    transition: 0.2s transform ease;
     transform: translateY(-5px);
-    .skill-logo{
-      i{
-        animation: anim .15s ease-in-out;
+    .skill-logo {
+      i {
+        animation: anim 0.15s ease-in-out;
       }
     }
   }
@@ -31,7 +31,7 @@
     border-radius: 50%;
     position: relative;
     margin-bottom: 0.5rem;
-    i{
+    i {
       font-size: 2rem;
       color: #72e2ae;
     }
@@ -97,7 +97,7 @@
       justify-content: center;
       align-items: center;
       background-color: rgb(15 23 42/0.8);
-      transition: .5s ease;
+      transition: 0.5s ease;
       transform-origin: left;
       backdrop-filter: blur(5px);
 
@@ -113,14 +113,13 @@
         align-items: center;
       }
     }
-
   }
 
   &:hover {
     .hover-content {
       left: 0;
       width: 100%;
-      transition: .5s ease;
+      transition: 0.5s ease;
     }
   }
 
@@ -128,6 +127,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    .skill_tags {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      flex-wrap: wrap;
+      margin: 0.25rem 0;
+    }
 
     .title {
       font-size: 18px;
@@ -146,19 +152,19 @@
 }
 
 @keyframes anim {
-  0%{
+  0% {
     font-size: 4rem;
   }
-  100%{
+  100% {
     font-size: 2rem;
   }
 }
 
 @keyframes loading {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
