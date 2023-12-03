@@ -1,46 +1,13 @@
 .contact_section {
-    .form_box {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin: auto;
-        max-width: 80%;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border: 1px solid rgba(255, 255, 255, 0.1019607843);
-        background-color: #162033;
-
-        label {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 1rem;
-            text-transform: capitalize;
-            textarea{
-                all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .btn {
                 outline: none;
-                background-color: #141d2e;
-                border-radius: 0.25rem;
-                border: 1px solid rgba(255, 255, 255, 0.1019607843);
-                padding: 1rem;
+                border: none;
+        
+                span {
+                    font-weight: 600;
+                }
             }
-
-            input {
-                outline: none;
-                background-color: #141d2e;
-                border-radius: 0.25rem;
-                border: 1px solid rgba(255, 255, 255, 0.1019607843);
-                padding: 0.75rem;
-                color: #fff;
-                font-size: 1rem;
-            }
-        }
-
-        .btn{
-           outline: none;
-           border: none;
-            span{
-                font-weight: 600;
-            }
-        }
-    }
 }
