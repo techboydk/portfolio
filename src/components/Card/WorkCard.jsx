@@ -17,16 +17,30 @@ const WorkCard = (props) => {
           )}
         </div>
         <div className="hover-content">
-          <a
-            href={props.details.previewUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button btn"
-          >
-            <span>
-              <i className="fa-solid fa-arrow-up-right-from-square"></i>
-            </span>
-          </a>
+          {props?.details?.previewUrl && (
+            <a
+              href={props.details.previewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button btn"
+            >
+              <span>
+                <i className="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
+            </a>
+          )}
+          {props?.details?.gitUrl && (
+            <a
+              href={props.details.gitUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button btn"
+            >
+              <span>
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          )}
         </div>
       </div>
       <div className="content">

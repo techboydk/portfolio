@@ -5,7 +5,7 @@ export const workData = [
         title: 'Facebook Editiable',
         desc: 'This is the facebook editiable profile page',
         previewUrl: 'https://techboydk.github.io/facebook-user-page',
-        gitUrl: '',
+        gitUrl: 'https://github.com/techboydk/facebook-user-page',
         tag: ["html", "css", "js"]
     },
     {
@@ -14,7 +14,7 @@ export const workData = [
         title: 'Gmail Generator',
         desc: 'This is a gmail generator web.',
         previewUrl: 'https://techboydk.github.io/gmail-generator',
-        gitUrl: '',
+        gitUrl: 'https://github.com/techboydk/gmail-generator',
         tag: ["html", "css", "js"]
     },
     {
@@ -23,7 +23,7 @@ export const workData = [
         title: 'EpicWord',
         desc: 'This is a quotes web.',
         previewUrl: 'https://techboydk.github.io/EpicWord',
-        gitUrl: '',
+        gitUrl: 'https://github.com/techboydk/EpicWord',
         tag: ["html", "css", "js"]
     },
     {
@@ -32,7 +32,7 @@ export const workData = [
         title: 'Digital Clock',
         desc: 'Animated fully functional DigitalClock',
         previewUrl: 'https://techboydk.github.io/digital-css-watch/',
-        gitUrl: '',
+        gitUrl: 'https://github.com/techboydk/digital-css-watch',
         tag: ["html", "css", "js"]
     },
     {
@@ -41,7 +41,7 @@ export const workData = [
         title: 'Google chrome',
         desc: 'This is a google chrome front-end design.',
         previewUrl: 'https://techboydk.github.io/google-chrome',
-        gitUrl: '',
+        gitUrl: 'https://github.com/techboydk/google-chrome',
         tag: ["html", "css", "js"]
     },
     {
@@ -53,23 +53,32 @@ export const workData = [
         gitUrl: 'https://github.com/techboydk/musify',
         tag: ["html", "css", "js", "react", "sass", "styled-components"]
     },
-    {
+    // {
+    //     category: 'reactjs',
+    //     image: '',
+    //     title: 'Spotify Clone',
+    //     desc: 'This is a spotify clone app.',
+    //     previewUrl: 'https://techboydk.github.io/spotify-clone/',
+    //     gitUrl: 'https://github.com/techboydk/spotify-clone',
+    //     tag: ["html", "css", "js", "react"]
+    // },
+    // {
+    //     category: 'reactjs',
+    //     image: '',
+    //     title: 'OnlyGans',
+    //     desc: 'this is a webpage where varienty of Machine Learning projects is available.',
+    //     previewUrl: '',
+    //     gitUrl: 'https://github.com/techboydk/onlygans',
+    //     tag: ["html", "css", "js", "react", "sass"]
+    // },
+        {
         category: 'reactjs',
         image: '',
-        title: 'Spotify Clone',
-        desc: 'This is a spotify clone app.',
-        previewUrl: 'https://techboydk.github.io/spotify-clone/',
-        gitUrl: 'https://github.com/techboydk/spotify-clone',
-        tag: ["html", "css", "js", "react"]
-    },
-    {
-        category: 'reactjs',
-        image: '',
-        title: 'OnlyGans',
-        desc: 'this is a webpage where varienty of Machine Learning projects is available.',
-        previewUrl: '',
-        gitUrl: 'https://github.com/techboydk/onlygans',
-        tag: ["html", "css", "js", "react", "sass"]
+        title: 'Portfolio website',
+        desc: 'This is my portfolio website developed using Reactjs',
+        previewUrl: 'https://techboydk.github.io/portfolio/',
+        gitUrl: 'https://github.com/techboydk/portfolio/tree/master',
+        tag: ["html", "css", "jsx", "reactjs", "sass"]
     },
 
     {

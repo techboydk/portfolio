@@ -5,7 +5,7 @@ export const ResumeData = {
             instituteName: "jawaharlal nehru university",
             year: "2020 - 2024",
             desc: "electronic and cummunication engineering",
-            marks: "6.5/9"
+            marks: "7.4/10"
         },
         {
             title: "Class 12th",
@@ -19,7 +19,7 @@ export const ResumeData = {
             instituteName: "OM SHANKAR INTER COLLEGE",
             year: "2016 - 2017",
             desc: "",
-            marks: "80.833%"
+            marks: "81%"
         },
 
     ],

@@ -47,7 +47,7 @@ const About = () => {
             </div>
           </div>
           <a
-            href="https://drive.google.com/file/d/1osQn_Be2zVHuFppTtxVLMARAge838tv3/view?usp=drive_link"
+            href="https://github.com/techboydk/portfolio2/raw/main/src/Assets/Dipesh_Yadav_CV.pdf"
             target="_blank"
             rel="noreferrer"
             className="header-btn btn"
